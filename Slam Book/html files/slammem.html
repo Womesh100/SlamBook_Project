@@ -1,0 +1,41 @@
+<?php
+ session_start();
+?>
+
+<!doctype html>
+<html>
+<head>
+<title> slam members...
+</title>
+<link type="text/css"rel="stylesheet"href="slammem.css">
+</head>
+<body>
+<div id="header">
+<img id="logo"src="logo1.jpg" alt="">
+<h3> welcome <?php if(isset($_SESSION['name'])){echo $_SESSION['name'];}?></h3>
+</div>
+<div id="navbar">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="afterlogin.php"onclick="document.location.href= 'afterlogin.php'">Personal Diary </a></li>
+<li><a href=""onclick="document.location.href= 'slammem.html'">Slam Members</a></li>
+<li><a href="">Help</a></li>
+</ul>
+</div>
+<div class="left">
+<button class="button" type="button"onclick="document.location.href= 'search.php'">View Your Slam Members</button>
+<button class="button" type="button"onclick="document.location.href= 'addnewslam.html'">Add a New Slam Member</button>
+</div>
+<form action=""method="">
+</form>
+</div>
+<div id="footer">
+<ul>
+<li><a href="">About</a></li>
+<li><a href="">Help</a></li>
+<li><a href=""onclick="document.location.href= 'contact.html'">Contact Us</a></li>
+</ul>
+&copy;2017 slamgang.com All Rights Reserved.
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?php
+ session_start();
+ ?>
+<!doctype html>
+<html>
+<head>
+<title> layout 
+</title>
+<link type="text/css"rel="stylesheet"href="afterlogin.css">
+</head>
+<body>
+<div id="header">
+<img id="logo"src="logo1.jpg" alt="">
+<h3> welcome <!--<?php// echo $_SESSION['name'] ;?> --></h3>
+<form action="logout.php" method="post" style="text-align:right">
+ <input type ="submit" name="logout" value="logout" />
+ </form>
+ <?php 
+   if(isset($_POST['logout']))
+   {
+    session_destroy();
+	header('location:homepage.html');
+	echo '<script type="text/javascript">alert("Logout successfully !!!")</script>';
+   } 	?>
+</div>
+<div id="navbar">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href=""onclick="document.location.href='afterlogin.html'">Personal Diary </a></li>
+<li><a href=""onclick="document.location.href='slammem.html'">Slam Members</a></li>
+<li><a href="">Help</a></li>
+</ul>
+</div>
+<div class="left">
+<form action="afterlogin.php"method="post">
+<u>Write Diary:-</u>
+<div class="row">
+		<label for="dob">Time:</label>
+		<input type="time" id="time"name="time"required/></br>
+	</div> 
+<div class="row">
+		<label for="dob">Date:</label>
+		<input type="date" id="dob"name="date"required/></br>
+	</div>
+	<textarea name="text">
+</textarea></br>
+<!--Personal Diary:-
+<textarea rows=""cols=""> 
+Date:-
+Time:-
+</textarea></br>-->
+<button class="button" type="button">Save It</button>
+</form>
+</div>
+<div class=<"right">
+</div>
+<div id="footer">
+<ul>
+<li><a href="">About</a></li>
+<li><a href="">Help</a></li>
+<li><a href=""onclick="document.location.href= 'contact.html'">Contact Us</a></li>
+</ul>
+&copy;2017 slamgang.com All Rights Reserved.
+</div>
+</body>
+</html>

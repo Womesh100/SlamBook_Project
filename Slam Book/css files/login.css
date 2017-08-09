@@ -1,0 +1,211 @@
+/*====body section=====*/
+body{
+	 background-image: url("bac2.jpg");
+	margin:0px;
+	font-family:verdana,georgian,helvetica,arial;
+	font-size:14px;
+    display:inline;
+}
+/*=========header & logo========*/
+#header{
+	background-color:transparent;
+	border-style:dotted;
+	border:1px solid blue;
+	margin:10px;
+	height:90px;
+	border-radius:5px;
+}
+#logo{
+	float:left;
+}
+img{
+	max-width:100%;
+	max-height:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5px;
+}
+h3{
+	font-size:250%;
+	text-align:center;
+	color:#e5e4d7;
+	font-family:"Century Gothic","Gill Sans",Arial,sans;
+	margin:0px;
+	position:relative;
+	top:50%;
+	-webkit-transform:translate(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+/*============navbar or login area ==============*/
+#navbar{
+	margin:10px;
+	height:60px;
+	border-radius:5px;
+	font-family:"Century Gothic","Gill Sans",Arial,sans;
+}
+.pos{
+	float:right;
+	border:1px solid blue;
+	border-radius:5px;
+	margin:10px auto;
+	height:50px;
+	
+}
+.lbutton{
+    background-color:#ADD8E6;
+   border:1px solid yellow;
+    color: white;
+	padding:06px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:25px;
+	margin-right:15px;
+	border-radius:5px;
+	margin-left:80px;
+	float:right;
+}
+.lbutton:hover{
+	background:black;
+	color:#ADD8E6;
+}
+.ca{
+    background-color:#ADD8E6;
+    border:1px solid yellow;
+    color: black;
+	padding:06px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:15px;
+	margin-right:15px;
+	border-radius:5px;
+	margin-left:80px;
+}
+.ca:hover{
+	background:black;
+	color:#ADD8E6;
+}
+/*========= left main body Or image slider part==============*/	
+.left{
+	margin:0px auto;
+	border-radius:5px;
+	padding:05px;
+	float:left;
+	font-size:110%;
+    background-size:100%;
+	height:502px;
+	width:47%;
+}
+@keyframes slider{
+	0%{
+		left:0%;
+	}
+	20%
+	{
+		left:0%;
+	}
+	25%{
+		left:-100%;
+	}
+	45%{
+		left:-100%;
+	}
+	50%{
+		left:-200%;
+	}
+	70%{
+		left:-200%
+	}
+	75%{
+		left:-300%;
+	}
+	95%{
+		left:-300%;
+	}
+	100%{
+		left:-400%
+	}
+}
+	#slider{overflow:hidden;
+		height:100%;
+		width:100%;
+		margin:opx;
+	}
+	#slider figure img{
+		width:20%;
+		float:left;
+	}
+	#slider figure{
+		position:relative;
+		width:500%;
+		margin:0;
+		left:0;
+		text-align:left;
+		font-size:0;
+		animation:20s slider infinite;
+	}
+/*========= right main body Or signup area part==============*/	
+.sideright{
+	background-color:transparent;
+	margin:0px auto;
+	color:yellow;
+	border-radius:5px;
+	padding:20px;
+	font-family:105%;
+	float:right;
+	width:48%;
+	height:475px;
+	overflow:auto;
+}
+.main{
+	margin:10px auto;
+	width:90%;
+}
+.form{
+	margin:auto;/*25px auto auto 100px;*/
+	border:0px solid black;
+	width:440px;
+	height:380px;
+}
+.row{
+	display:table-row;
+	color:white;
+	font-size:20px;
+	padding:10px;
+	
+}
+.row label{
+	display:table-cell;
+	padding:5px;
+	text-align:left;
+	
+}
+.row input{
+	display:table-cell;
+	padding:2px;
+	border-radius:3px;
+	height:22px;
+	margin-left:10px;
+	margin-right:10px;
+	background:transparent;
+	color:white;
+}
+/*========= footer part==============*/	
+#footer{
+	
+	margin:10px;
+	height:25px;
+	border:2px solid blue;
+	border-radius:5px;
+	clear:both;
+	color:white;
+	text-align:center;
+	padding:10px;
+	font-size:90%;
+}
+

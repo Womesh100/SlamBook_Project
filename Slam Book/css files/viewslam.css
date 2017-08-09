@@ -1,0 +1,222 @@
+/*========body section==========*/
+
+body{
+	background-image: url("bac2.jpg");
+	margin:0px;
+	font-family:verdana,georgian,helvetica,arial;
+	font-size:14px;
+}
+/*========layout section==========*/
+
+#header{
+	background-color:transparent;
+	margin:10px;
+	height:120px;
+	border-radius:5px;
+}
+#logo{
+	float:left;
+}
+img{
+	max-width:100%;
+	max-height:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5px;
+}
+#navbar ul {
+	padding:5px;
+	list-style-type:none;
+	text-align:center;
+	background-color:#000;
+	margin:10px;
+	border-radius:5px;
+}
+#navbar ul li {
+	display:inline;
+}
+#navbar ul li a{
+	text-decoration:none;
+	font-family:arial;
+	padding:.2em 1em;
+	color:#fff;
+	background-color:#000;
+	border-radius:5px;
+}
+#navbar ul li a:hover{
+	color:#000;
+	background-color:#fff;
+}
+.left{
+	border:1px solid blue;
+	margin-left:100px;
+	margin-bottom:10px;
+	border-radius:5px;
+	padding:05;
+	font-family:120%;
+	float:left;
+	width:56%;
+	height:455px;
+	overflow:auto;
+	clear:right;
+	font-size:20px;
+}
+.right{
+	border:1px solid blue;
+	margin-right:160px;
+/*	margin-left:30px;  */
+	margin-bottom:10px;
+	border-radius:5px;
+	padding:05;
+	font-family:120%;
+	float:right;
+	width:22%;
+	height:455px;
+	overflow:auto;
+	clear:right;
+	font-size:20px;
+}
+#footer{
+	background-color:transparent;
+	margin:10px;
+	height:60px;
+	border-radius:5px;
+	clear:both;
+	color:#efe5d0;
+	text-align:center;
+	padding:15px;
+	font-size:90%;
+}
+#footer ul {
+	padding:5px;
+	list-style-type:none;
+	text-align:center;
+	margin:10px;
+	border-radius:5px;
+}
+#footer ul li {
+	display:inline;
+}
+#footer ul li a{
+	text-decoration:none;
+	font-family:arial;
+	padding:.2em 1em;
+	color:#fff;
+	background-color:grey;
+	border-radius:5px;
+	margin:15px;
+}
+#footer ul li a:hover{
+	color:grey;
+	background-color:#000;
+}
+
+/*========heading section==========*/
+h1{
+	font-size:120%;
+	color:#ce282e;
+}
+h2{
+	font-size:120%;
+	color:pink;
+	margin-left:15px;
+}
+h3{
+	font-size:250%;
+	text-align:center;
+	color:#e5e4d7;
+	font-family:"Century Gothic","Gill Sans",Arial,sans;
+	margin:0px;
+	position:relative;
+	top:50%;
+	-webkit-transform:translate(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.button{
+    background-color: #336699;
+    border: none;
+    color: white;
+	padding:06px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:15px;
+	margin-right:15px;
+	border-radius:5px;
+	margin-left:150px;
+	margin-bottom:15px;
+}
+.button:hover {
+	background-color:white;
+	color: #336699;
+}
+.lbutton{
+    background-color:#ADD8E6;
+   border:1px solid yellow;
+    color: white;
+	padding:06px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:25px;
+	margin-right:15px;
+	border-radius:5px;
+	margin-left:80px;
+	float:right;
+}
+.lbutton:hover{
+	background:black;
+	color:#ADD8E6;
+}
+th,td {
+    border: 2px solid grey;
+	color:white;
+}
+tr{height:50px;
+width:100%;}
+.sbar[type=text] {
+    width: 200px;
+	height:25px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	border:2px solid black;
+	border-radius:3px;
+	float:right;
+	background:gray;
+	color:white;
+}
+/*placeholder{color:black;}
+ When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 200px;
+
+}
+#sb{
+	background-color:#ADD8E6;
+    border: none;
+    color: white;
+	padding:06px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:15px;
+	margin-right:15px;
+	border-radius:5px;
+	margin-left:150px;
+	margin-bottom:15px;
+	
+}
+#sb:hover{
+background-color:white;
+color:#ADD8E6;
+}
+.sbox{
+	height:25px;
+	width:50%;
+	display:inline;
+}
